@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: form
+name: Form
+icon: format-separator
+parameters:
+  - id: formName
+    name: Form Name
+    type: text
+    typeConfig: null
+  - id: formIdentifier
+    name: Form Identifier
+    type: text
+    typeConfig: null
+  - id: formActions
+    name: Form Actions
+    type: $block
+    typeConfig:
+      allowedTypes:
+        - formSetQuirkAction
+useTeamPermissions: true
+slots:
+  - id: formFields
+    name: Form Fields
+    allowedComponents:
+      - formTextField
+      - formDropdownField
+      - formNumericField
+      - formCheckboxField
+      - formDateField
+      - formTimeField
+      - formColorField
+      - formRadioField
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+  - id: formButtons
+    name: Form Buttons
+    minComponents: 1
+    allowedComponents:
+      - formButton
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+titleParameter: formName
+canBeComposition: false
+created: '2024-10-21T17:41:13.573432+00:00'
+updated: '2024-10-21T17:41:13.573432+00:00'

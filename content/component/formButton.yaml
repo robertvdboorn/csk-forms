@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: formButton
+name: Form Button
+icon: play-button-r
+parameters:
+  - id: displayName
+    name: Display Name
+    type: text
+    typeConfig: null
+  - id: label
+    name: Label
+    type: text
+    typeConfig: null
+  - id: type
+    name: Type
+    type: select
+    typeConfig:
+      options:
+        - text: Submit
+          value: submit
+        - text: Button
+          value: button
+        - text: Reset
+          value: reset
+useTeamPermissions: true
+slots: []
+titleParameter: displayName
+canBeComposition: false
+created: '2024-10-21T17:41:12.729521+00:00'
+updated: '2024-10-21T17:41:12.729521+00:00'

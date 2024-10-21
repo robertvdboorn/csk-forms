@@ -1,0 +1,44 @@
+id: formDropdownOption
+name: Form Dropdown Option
+created: '2024-08-14T18:18:18.950834+00:00'
+updated: '2024-08-14T18:21:17.763747+00:00'
+slugSettings:
+  required: 'no'
+useTeamPermissions: true
+fields:
+  - id: name
+    name: Name
+    type: text
+    helpText: ''
+    typeConfig: null
+    localizable: false
+  - id: label
+    name: Label
+    type: text
+    helpText: ''
+    typeConfig: null
+    localizable: false
+  - id: value
+    name: Value
+    type: text
+    helpText: ''
+    typeConfig: null
+    localizable: false
+  - id: options
+    name: Options
+    type: multi-select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: Default
+          value: default
+        - text: Hidden
+          value: hidden
+        - text: Disabled
+          value: disabled
+    localizable: false
+entryName: name
+description: ''
+icon: select
+type: block
+permissions: []

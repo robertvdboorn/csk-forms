@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: formDropdownField
+name: Form Dropdown Field
+icon: select-r
+parameters:
+  - id: name
+    name: Name
+    type: text
+    typeConfig:
+      required: true
+  - id: label
+    name: Label
+    type: text
+    typeConfig: null
+  - id: required
+    name: Required
+    type: checkbox
+    typeConfig: null
+  - id: options
+    name: Options
+    type: $block
+    typeConfig:
+      allowedTypes:
+        - formDropdownOption
+useTeamPermissions: true
+slots: []
+titleParameter: name
+canBeComposition: false
+created: '2024-10-21T17:41:12.824576+00:00'
+updated: '2024-10-21T17:41:12.824576+00:00'

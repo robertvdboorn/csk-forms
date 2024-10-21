@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: formRadioField
+name: Form Radio Field
+icon: radio-checked
+parameters:
+  - id: name
+    name: Name
+    type: text
+    typeConfig: null
+  - id: label
+    name: Label
+    type: text
+    typeConfig: null
+  - id: required
+    name: Required
+    type: checkbox
+    typeConfig: null
+  - id: options
+    name: Options
+    type: $block
+    typeConfig:
+      allowedTypes:
+        - formRadioOption
+useTeamPermissions: true
+slots: []
+titleParameter: name
+canBeComposition: false
+created: '2024-10-21T17:41:13.467459+00:00'
+updated: '2024-10-21T17:41:13.467459+00:00'

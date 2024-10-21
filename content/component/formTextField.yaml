@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: formTextField
+name: Form Text Field
+icon: format-text
+parameters:
+  - id: name
+    name: Name
+    type: text
+    typeConfig:
+      required: true
+  - id: placeholder
+    name: Placeholder
+    type: text
+    typeConfig: null
+  - id: label
+    name: Label
+    type: text
+    typeConfig: null
+  - id: type
+    name: Type
+    type: select
+    typeConfig:
+      options:
+        - text: Text
+          value: text
+        - text: Number
+          value: number
+        - text: Email
+          value: email
+        - text: Password
+          value: password
+      required: false
+  - id: required
+    name: Required
+    type: checkbox
+    typeConfig: null
+useTeamPermissions: true
+slots: []
+titleParameter: name
+canBeComposition: false
+created: '2024-10-21T17:41:13.506806+00:00'
+updated: '2024-10-21T17:41:13.506806+00:00'

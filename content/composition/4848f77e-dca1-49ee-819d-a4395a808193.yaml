@@ -1,0 +1,64 @@
+composition:
+  _name: Form
+  _id: 4848f77e-dca1-49ee-819d-a4395a808193
+  _slug: form
+  type: page
+  parameters:
+    pageTitle:
+      type: text
+      value: Form Example
+  slots:
+    pageFooter:
+      - _id: 4ab694cd-aacb-444b-b729-ba979fdb4b25
+        type: footer
+        _pattern: 319639e9-4bac-4fb3-8f0b-19088c969fcb
+    pageHeader:
+      - _id: 8ab203b0-4124-428d-962d-9707de558c9d
+        type: header
+        _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
+    pageContent:
+      - _id: 95ee5b2c-52a1-4be7-8dbd-fb1a7c197758
+        type: form
+        slots:
+          formFields:
+            - _id: 57b5ea60-afac-4a1d-85cb-63c7610f611f
+              type: formTextField
+              parameters:
+                name:
+                  type: text
+                  value: Name
+                type:
+                  type: select
+                  value: text
+                label:
+                  type: text
+                  value: Your name
+                required:
+                  type: checkbox
+                  value: true
+                placeholder:
+                  type: text
+                  value: John
+          formButtons:
+            - _id: e4a674fa-263a-4282-97c0-696322352b66
+              type: formButton
+              parameters:
+                type:
+                  type: select
+                  value: submit
+                label:
+                  type: text
+                  value: Submit
+                displayName:
+                  type: text
+                  value: Submit
+        parameters:
+          formName:
+            type: text
+            value: example
+          formIdentifier:
+            type: text
+            value: example
+created: '2024-10-21T17:47:06.356789+00:00'
+modified: '2024-10-21T17:48:32.075908+00:00'
+pattern: false

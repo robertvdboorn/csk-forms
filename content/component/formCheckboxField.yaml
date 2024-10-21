@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: formCheckboxField
+name: Form Checkbox Field
+icon: check-r
+parameters:
+  - id: name
+    name: Name
+    type: text
+    typeConfig: null
+  - id: label
+    name: Label
+    type: text
+    typeConfig: null
+useTeamPermissions: true
+slots: []
+titleParameter: name
+canBeComposition: false
+created: '2024-10-21T17:41:12.534943+00:00'
+updated: '2024-10-21T17:41:12.534943+00:00'

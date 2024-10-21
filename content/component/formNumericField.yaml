@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: formNumericField
+name: Form Numeric Field
+icon: more-r
+parameters:
+  - id: name
+    name: Name
+    type: text
+    typeConfig: null
+  - id: label
+    name: Label
+    type: text
+    typeConfig: null
+  - id: placeholder
+    name: Placeholder
+    type: text
+    typeConfig: null
+  - id: required
+    name: Required
+    type: checkbox
+    typeConfig: null
+  - id: type
+    name: Type
+    type: select
+    typeConfig:
+      options:
+        - text: Range
+          value: range
+        - text: Number
+          value: number
+  - id: minimum
+    name: Minimum
+    type: number
+    typeConfig: null
+  - id: maximum
+    name: Maximum
+    type: number
+    typeConfig: null
+  - id: step
+    name: Step
+    type: number
+    typeConfig: null
+useTeamPermissions: true
+slots: []
+titleParameter: name
+canBeComposition: false
+created: '2024-10-21T17:41:12.536706+00:00'
+updated: '2024-10-21T17:41:12.536706+00:00'

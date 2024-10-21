@@ -1,0 +1,31 @@
+id: formSetQuirkAction
+name: Form Set Quirk Action
+created: '2024-08-16T13:28:37.641309+00:00'
+updated: '2024-08-16T13:28:37.641309+00:00'
+slugSettings:
+  required: 'no'
+useTeamPermissions: true
+fields:
+  - id: name
+    name: Name
+    type: text
+    helpText: ''
+    typeConfig: null
+    localizable: false
+  - id: quirkName
+    name: Quirk Name
+    type: text
+    helpText: ''
+    typeConfig: null
+    localizable: false
+  - id: quirkValue
+    name: Quirk Value
+    type: text
+    helpText: ''
+    typeConfig: null
+    localizable: false
+entryName: name
+description: ''
+icon: data
+type: block
+permissions: []
