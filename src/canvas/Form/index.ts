@@ -11,20 +11,20 @@ import FormColorField from './Fields/FormColorField';
 import FormButton from './Buttons/FormButton';
 
 const components = [
-	{ type: 'form', component: Form },
-	{ type: 'formTextField', component: FormTextField },
-	{ type: 'formNumericField', component: FormNumericField },
-	{ type: 'formDropdownField', component: FormDropdownField },
-	{ type: 'formCheckboxField', component: FormCheckboxField },
-	{ type: 'formRadioField', component: FormRadioField },
-	{ type: 'formDateField', component: FormDateField },
-	{ type: 'formTimeField', component: FormTimeField },
-	{ type: 'formColorField', component: FormColorField },
-	{ type: 'formButton', component: FormButton },
+  { type: 'form', component: Form },
+  { type: 'formTextField', component: FormTextField },
+  { type: 'formNumericField', component: FormNumericField },
+  { type: 'formDropdownField', component: FormDropdownField },
+  { type: 'formCheckboxField', component: FormCheckboxField },
+  { type: 'formRadioField', component: FormRadioField },
+  { type: 'formDateField', component: FormDateField },
+  { type: 'formTimeField', component: FormTimeField },
+  { type: 'formColorField', component: FormColorField },
+  { type: 'formButton', component: FormButton },
 ];
 
 components.forEach(({ type, component }) => {
-	registerUniformComponent({ type, component });
+  registerUniformComponent({ type, component });
 });
 
 export * from './Form';
